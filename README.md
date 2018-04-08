@@ -31,13 +31,13 @@ USERSIR 提供了一个较为健全的权限管理系统.应用申请特权模�
 UsersirCompat.isUsersirInstalled(packageManager);
 ```
 
-3.判断应用是否已有特权模式权限:
+4.判断应用是否已有特权模式权限:
 
 ```java
 UsersirCompat.checkSelfPermission(this);
 ```
 
-4.调用系统流程申请权限：
+5.调用系统流程申请权限：
 
 ```java
 ActivityCompat.requestPermissions(this, new String[]{UsersirCompat.usersir_permission}, REQUEST_CODE);
@@ -60,7 +60,7 @@ ActivityCompat.requestPermissions(this, new String[]{UsersirCompat.usersir_permi
     }
 ```
 
-5.调用
+6.调用
 
 直接调用 devicePolicyManager 方法,需要 componentName 传空值即可,eg:
 
